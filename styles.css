@@ -276,7 +276,6 @@ a:hover {
 }
 
 
-
 /* # SKILLS # */
 
 #skills {
@@ -401,6 +400,44 @@ footer i {
 }
 
 
+
+@media (min-width: 768px){
+
+	.section {
+		padding: 11px 30px 10px;
+	}
+
+	#projects .arrow {
+		top: calc(107px + 19.2vw);
+	}
+
+	.two-images {
+		max-width: 869px;
+		margin: auto;
+	}
+
+	#projects .frame.desktop,
+	#projects .frame.mobile,
+	#projects .frame.graph,
+	#projects .frame.tabber {
+		display: inline-block;
+	}
+
+	#projects .frame.landscape {
+		height: 38.4vw;
+		width: 60vw;
+		max-width: 573px;
+		max-height: 366.7px;
+	}
+
+	#projects .frame.mobile,
+	#projects .frame.tabber {
+		height: 38.4vw;
+		width: 30.1vw;
+		max-width: 287.45px;
+		max-height: 366.7px;
+	}
+}
 
 
 
