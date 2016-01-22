@@ -162,6 +162,8 @@ a:hover {
 		background-position: center;
 		height: 48.7vw;
 		width: 40vw;
+		max-height: 412px;
+		max-width: 338.4px;
 		float: left;
 		margin: 0 10px 0 0;
 	}
@@ -335,6 +337,17 @@ a:hover {
 	text-align: center;
 }
 
+#submitted .puppy {
+	background-image: url(images/puppymail.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+	width: 80vw;
+	height: 40vw;
+	max-width: 500px;
+	max-height: 250px
+}
+
 .ss-required-asterisk {
 	color: #ff0000;
 }
@@ -481,11 +494,6 @@ footer i {
 
 	/* # CONTACT # */
 
-	.contactForm {
-		max-width: 800px;
-		margin: auto;
-	}
-
 	.halve {
 		width: 49%;
 		display: inline-block;
@@ -508,5 +516,12 @@ footer i {
 }
 
 
+@media (min-width: 860px){
 
+	/* # GENERAL # */
+
+	.section {
+		padding: 11px calc(50% - 400px) 10px;
+	}
+}
 
