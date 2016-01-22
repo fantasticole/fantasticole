@@ -191,7 +191,7 @@ a:hover {
 }
 
 #projects .arrow:hover {
-	background-color: aquamarine;
+	background-color: #f2eae6;
 }
 
 .fa-angle-left {
@@ -203,16 +203,21 @@ a:hover {
 }
 
 .slide {
-	margin-bottom: 20px;
-	display: none;
-	/*opacity: 0;*/
-	transition: opacity 0.5s ease;
+	height: 0;
+	opacity: 0;
+	transition: opacity 0.7s ease;
+}
+
+.slide:not(#handwriting){
+	margin-top: -18.7px;
 }
 
 .slide.active {
-	display: block;
-	/*opacity: 1;*/
+	height: auto;
+	opacity: 1;
+	margin-bottom: 20px;
 }
+
 
 #projects .frame {
 	background-repeat: no-repeat;
@@ -323,7 +328,6 @@ input#ss-submit {
 	display: block;
 	border-radius: 3px;
 	padding: 3px 6px;
-	/*border: none;*/
 	border-color: #88CCF1;
 	border-width: 1px;
 	background: #88CCF1;
