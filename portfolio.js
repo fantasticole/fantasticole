@@ -29,18 +29,26 @@ window.addEventListener('scroll', stickyNav, false);
 
 
 // Scroll in intervals to move around the page smoothly.
-function smoothScroll(distanceFromTop, destination){
-	console.log('body:', distanceFromTop);
-	console.log('location:', destination);
-	var distance = -distanceFromTop - destination
-	console.log(distance);
-	var move = distance/10
-	// console.log(move);
+function smoothScroll(distanceFromTop, destination, cb){
+	// Find distance to go.
+	var distance = distanceFromTop - destination
+	// Break it into pieces.
+	var move = distance/10;
+	// Scroll the distance of each piece over 20ms.
 	var timer = setInterval(function(){
-		distance -= move
-		console.log(distance)
-		if (distance < destination) clearInterval(timer)
-		window.scrollTo(0, destination)
+		// Update location to scroll to.
+		distanceFromTop -= move
+		// If the distance left is less than a move...
+		if (Math.abs(distanceFromTop - destination) < Math.abs(move) ){
+			// Stop the interval...
+			clearInterval(timer);
+			// And go to the destination.
+			window.scrollTo(0, destination);
+		}
+		// Otherwise, make the next move.
+		else {
+			window.scrollTo(0, distanceFromTop);
+		}
 	}, 20)
 }
 
@@ -60,16 +68,18 @@ function alterAnchor(e){
 	// Find difference.
 	var newLoc = element - body - 25;
 	// Go there.
-	window.scrollTo(0, newLoc);
-	// smoothScroll(body, newLoc);
+	// window.scrollTo(0, newLoc);
+	smoothScroll(-body, newLoc);
 }
 
 var projects = document.getElementsByClassName('projects')[0];
 var contact = document.getElementsByClassName('contact')[0];
+var about = document.getElementsByClassName('about')[0];
 
 // Run alterAnchor function when the user clicks the projects or contact links in the menu
 projects.addEventListener('click', alterAnchor, false);
 contact.addEventListener('click', alterAnchor, false);
+about.addEventListener('click', alterAnchor, false);
 
 
 // var resume = document.getElementsByClassName('resume')[0];

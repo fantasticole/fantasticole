@@ -86,7 +86,7 @@ a:hover {
 		width: 100%;
 		height: 15.6vw;
 		border-top: calc(50vh - 13vw) solid #000;
-		border-bottom: calc(50vh - 2.6vw - 48px) solid #000;
+		border-bottom: calc(50vh - 2.6vw) solid #000;
 	}
 
 
@@ -94,7 +94,7 @@ a:hover {
 /* # NAVIGATION # */
 
 	nav {
-		margin-top: -3px;
+		margin-top: -50px;
 		width: 100%;
 		height: 50px;
 		background-color: #000;
@@ -117,7 +117,8 @@ a:hover {
 		    transition: all 0.7s ease;
 		}
 
-		nav li:hover {
+		nav li:hover,
+		nav li.active {
 			background-color: #F2EAE6;
 			color: #000;
 			cursor: pointer;
@@ -136,6 +137,7 @@ a:hover {
 	nav.fixed {
 		position: fixed;
 		top: 0;
+		margin-top: 0;
 	}
 
 	.section {
@@ -146,16 +148,11 @@ a:hover {
 		box-sizing: border-box;
 	}
 
-	.fixed + .section {
-		padding-top: 60px;
-	}
-
-
 
 /* # ABOUT # */
 
-	.strikethrough {
-		text-decoration: line-through;
+	#about {
+		padding-top: 30px;
 	}
 
 	.frame.cole {
