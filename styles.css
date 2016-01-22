@@ -427,10 +427,13 @@ footer i {
 
 @media (min-width: 768px){
 
+	/* # GENERAL # */
+
 	.section {
 		padding: 11px 30px 10px;
 	}
 
+	/* # PROJECTS # */
 	#projects .arrow {
 		top: calc(107px + 19.2vw);
 	}
@@ -462,6 +465,8 @@ footer i {
 		max-height: 366.7px;
 	}
 
+	/* # SKILLS # */
+
 	.infoIcon i {
 		font-size: 40px;
 	}
@@ -473,6 +478,29 @@ footer i {
 	.infoIcon img {
 		height: 40px;
 	}
+
+	/* # CONTACT # */
+
+	.contactForm {
+		max-width: 800px;
+		margin: auto;
+	}
+
+	.halve {
+		width: 49%;
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+
+	.halve:first-child {
+		margin-right: 1%;
+	}
+
+	.show-on-mobile {
+		display: none;
+	}
+
+	/* ## SOCIAL ICONS ## */
 
 	.social a {
 		font-size: 120%;
