@@ -6,6 +6,7 @@
 /* # CONTACT # */
 /* ## SOCIAL ICONS ## */
 /* # FOOTER # */
+/* # 404 # */
 
 /* ****************************************** */
 
@@ -238,7 +239,7 @@ a:hover {
 }
 
 	#projects .frame.landscape {
-		background-position: 50% 53%;
+		background-position: 50% 50%;
 		height: 51.2vw;
 		width: 80vw;
 	}
@@ -299,7 +300,7 @@ a:hover {
 }
 
 #projects li:before {
-	content: '* ';
+	content: 'ϟ ';
 }
 
 /* # SKILLS # */
@@ -438,6 +439,42 @@ footer i {
 
 
 
+/* # 404 # */
+
+.notfound {
+	text-align: center;
+	color: #f2eae6;
+	padding: 15px;
+}
+
+.notfound h1 {
+	font-size: 60px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.notfound h2 {
+	font-family: 'Inconsolata';
+}
+
+.frame.lc {
+	background-image: url(images/LC.gif);
+	background-size: 82%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 85vw;
+	height: 58vw;
+	max-width: 413px;
+	max-height: 282px;
+}
+
+.notfound a {
+	display: block;
+	text-transform: uppercase;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
 @media (min-width: 768px){
 
 	/* # GENERAL # */
@@ -466,16 +503,16 @@ footer i {
 	#projects .frame.landscape {
 		height: 38.4vw;
 		width: 60vw;
-		max-width: 573px;
-		max-height: 366.7px;
+		max-width: 527px;
+		max-height: 338px;
 	}
 
 	#projects .frame.mobile,
 	#projects .frame.tabber {
 		height: 38.4vw;
 		width: 30.1vw;
-		max-width: 287.45px;
-		max-height: 366.7px;
+		max-width: 265px;
+		max-height: 338px;
 	}
 
 	/* # SKILLS # */
