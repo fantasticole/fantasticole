@@ -6,7 +6,7 @@
 /* # CONTACT # */
 /* ## SOCIAL ICONS ## */
 /* # FOOTER # */
-/* # 404 # */
+/* # ERROR PAGES # */
 
 /* ****************************************** */
 
@@ -439,36 +439,60 @@ footer i {
 
 
 
-/* # 404 # */
+/* # ERROR PAGES # */
 
-.notfound {
+.error {
 	text-align: center;
 	color: #f2eae6;
 	padding: 15px;
 }
 
-.notfound h1 {
+.error h1 {
 	font-size: 60px;
 	margin-top: 15px;
 	margin-bottom: 5px;
 }
 
-.notfound h2 {
+.error h2 {
 	font-family: 'Inconsolata';
 }
 
-.frame.lc {
-	background-image: url(images/LC.gif);
+.error .frame {
 	background-size: 82%;
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 85vw;
+}
+
+.frame.notfound {
+	background-image: url(images/error/LC.gif);
 	height: 58vw;
 	max-width: 413px;
 	max-height: 282px;
 }
 
-.notfound a {
+.frame.jan {
+	background-image: url(images/error/jan.gif);
+	height: 43.18vw;
+	max-width: 500px;
+	max-height: 254px;
+}
+
+.frame.johnye {
+	background-image: url(images/error/johnye.gif);
+	height: 72.96vw;
+	max-width: 349.5px;
+	max-height: 300px;
+}
+
+.frame.denied {
+	background-image: url(images/error/denied.gif);
+	height: 50.45vw;
+	max-width: 421.25px;
+	max-height: 250px;
+}
+
+.error a {
 	display: block;
 	text-transform: uppercase;
 	margin-top: 15px;
