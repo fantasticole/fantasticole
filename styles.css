@@ -11,6 +11,9 @@
 /* ****************************************** */
 
 /* ## COLORS ## */
+/* #47dcaa/rgb(71, 220, 170) - Turquoise */
+/* #148aac/rgb(20, 138, 172) - Blue */
+/* ****************************************** */
 /* #0dab76/rgb(13, 171, 118) - Green */
 /* #d76b8d/rgb(215, 147, 101) - Pink */
 /* #f2eae6/rgb(242, 234, 230) - Eggshell */
@@ -36,6 +39,7 @@ body {
 	background-color: #000;
 	overflow-x: hidden;
 	background-image: url(images/backgrounds/Seamless-flowers-pattern-2.png);
+	background-image: url(images/backgrounds/triangles.png);
 	background-size: 15%;
 	background-attachment: fixed;
 	/*background-image: url(images/backgrounds/cloth-pattern-2 large.png);*/
@@ -61,11 +65,13 @@ h5 {
 a {
 	text-decoration: none;
 	color: #88CCF1;
+	color: #47dcaa;
 	transition: all 0.5s ease;
 }
 
 a:hover {
 	color: #D76B8D;
+	color: #148aac;
 }
 
 #content{
@@ -99,7 +105,7 @@ a:hover {
 		width: 100%;
 		height: 50px;
 		background-color: #000;
-		color: #F2EAE6;
+		color: #47dcaa;
 		z-index: 1000;
 	}
 		nav ul {
@@ -120,18 +126,18 @@ a:hover {
 
 		nav li:hover,
 		nav li.active {
-			background-color: #F2EAE6;
+			background-color: #47dcaa;
 			color: #000;
 			cursor: pointer;
 		}
 
 		nav a {
-			color: #F2EAE6;
+			color: #47dcaa;
 			display: block;
 		}
 
 		nav a:hover {
-			background-color: #F2EAE6;
+			background-color: #47dcaa;
 			color: #000;
 		}
 
@@ -142,9 +148,9 @@ a:hover {
 	}
 
 	.section {
-		min-height: 100vh;
+		min-height: 475px;
 		width: 100%;
-		background-color: #fff;
+		background-color: #000;
 		padding: 11px 15px 10px;
 		box-sizing: border-box;
 	}
@@ -154,19 +160,24 @@ a:hover {
 
 	#about {
 		padding-top: 30px;
+		background-image: url(images/cole.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 90% 50%;
+		min-height: 475px;
+		height: 100vh;
 	}
 
-	.frame.cole {
-		background-image: url(images/cole.png);
-		background-size: 82%;
-		background-repeat: no-repeat;
-		background-position: center;
-		height: 48.7vw;
-		width: 40vw;
-		max-height: 412px;
-		max-width: 338.4px;
-		float: left;
-		margin: 0 10px 0 0;
+	.about-me {
+		background-color: rgba(255, 255, 255, 0.75);
+		width: 335px;
+		padding: 10px;
+		border-radius: 3px;
+		float: right;
+	}
+
+	.about-me a {
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 	}
 
 
@@ -175,6 +186,8 @@ a:hover {
 #projects {
 	position: relative;
 	overflow: hidden;
+	background-color: #000;
+	color: #fff;
 }
 
 #projects h1 {
@@ -202,7 +215,7 @@ a:hover {
 }
 
 #projects .arrow:hover {
-	background-color: #f2eae6;
+	background-color: #47dcaa;
 }
 
 .fa-angle-left {
@@ -329,6 +342,11 @@ a:hover {
 
 /* # CONTACT # */
 
+#contact {
+	height: 100vh;
+	color: #fff;
+}
+
 #contact h1 {
 	text-align: center;
 }
@@ -397,10 +415,6 @@ input#ss-submit.disabled {
 	background-image: linear-gradient(to bottom, #c3c6c7, #a5a7a8);
 }
 
-
-
-/* ## SOCIAL ICONS ## */
-
 .hidden {
 	display: none;
 }
@@ -409,7 +423,6 @@ input#ss-submit.disabled {
 	display: flex;
 	flex-direction: row;
 	padding: 60px 15px;
-	background-color: rgba(0,0,0,0.5);
 }
 
 .social div {
@@ -423,8 +436,7 @@ input#ss-submit.disabled {
 /* # FOOTER # */
 
 footer {
-	background-color: #000;
-	color: #F2EAE6;
+	color: #47dcaa;
 	text-align: center;
 	padding: 5px;
 }
@@ -443,7 +455,7 @@ footer i {
 
 .error {
 	text-align: center;
-	color: #f2eae6;
+	color: #47dcaa;
 	padding: 15px;
 }
 
