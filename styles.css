@@ -84,6 +84,22 @@ p {
 		border-bottom: calc(50vh - 2.6vw) solid #000;
 	}
 
+	.stencil-border {
+		background-color: #000;
+		width: 100%;
+		position: absolute;
+	}
+
+	.stencil-border.top {
+		height: calc(50vh - 13vw);
+		top: 0;
+	}
+
+	.stencil-border.bottom {
+		height: 20px;
+		top: calc(50vh + 2.6vw);
+	}
+
 
 
 /* # NAVIGATION # */
