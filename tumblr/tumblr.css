@@ -1,0 +1,629 @@
+/* # GENERAL # */
+/* # NAVIGATION # */
+/* # ABOUT # */
+/* # PROJECTS # */
+/* # SKILLS # */
+/* # CONTACT # */
+/* ## SOCIAL ICONS ## */
+/* # FOOTER # */
+/* # ERROR PAGES # */
+
+/* ****************************************** */
+
+/* ## COLORS ## */
+/* #47dcaa/rgb(71, 220, 170) - Turquoise */
+/* #1db9d3/rgb(29, 185, 211) - Blue */
+/* ****************************************** */
+/* #0dab76/rgb(13, 171, 118) - Green */
+/* #d76b8d/rgb(215, 147, 101) - Pink */
+/* #f2eae6/rgb(242, 234, 230) - Eggshell */
+/* #424874/rgb(66, 72, 116) - Navy */
+/* #88ccf1/rgb(136, 204, 241) - Baby Blue */
+
+/* ****************************************** */
+
+
+
+/* # GENERAL # */
+
+html {
+  font-family: 'Inconsolata';
+
+}
+
+body {
+  background-color: #000;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  background-size: 15%;
+  background-image: url(https://static.tumblr.com/ru7wwz6/jxpp3bzwx/triangles.png);
+}
+
+body iframe {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Lobster', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: #1db9d3;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  background-color: #1db9d3;
+  color: #000;
+}
+
+p {
+  font-size: 20px;
+}
+
+#content{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  transition: background-color 1.5s ease;
+  background-color: #000;
+}
+
+#content.solid{
+  background-color: transparent;
+}
+
+  .stencil {
+    width: 100%;
+    height: 15.6vw;
+    border-top: calc(50vh - 13vw) solid #000;
+    border-bottom: calc(50vh - 2.6vw) solid #000;
+  }
+
+  .stencil-border {
+    background-color: #000;
+    width: 100%;
+    position: absolute;
+  }
+
+  .stencil-border.top {
+    height: calc(50vh - 13vw);
+    top: 0;
+  }
+
+  .stencil-border.bottom {
+    height: 20px;
+    top: calc(50vh + 2.6vw);
+  }
+
+
+
+/* # NAVIGATION # */
+
+  nav {
+    margin-top: -50px;
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    color: #47dcaa;
+    z-index: 1000;
+  }
+    nav ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+    }
+
+    nav li {
+      flex: 1;
+      height: 100%;
+      list-style: none;
+      text-align: center;
+        line-height: 50px;
+        transition: all 0.7s ease;
+    }
+
+    nav li:hover,
+    nav li.active {
+      background-color: #1db9d3;
+      color: #000;
+      cursor: pointer;
+    }
+
+    nav a {
+      display: block;
+      color: #1db9d3;
+    }
+
+    nav a:hover {
+      background-color: #1db9d3;
+      color: #000;
+    }
+
+  nav.fixed {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+  }
+
+  .section {
+    min-height: 475px;
+    width: 100%;
+    background-color: #000;
+    padding: 11px 15px 10px;
+    box-sizing: border-box;
+  }
+
+
+/* # ABOUT # */
+
+  #about {
+    padding-top: 30px;
+    background-image: url(https://static.tumblr.com/ru7wwz6/r0xp3bw6p/cole.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    min-height: 475px;
+    height: 100vh;
+  }
+
+  .about-me {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    padding: 20px;
+    border-radius: 3px;
+    float: none;
+    box-sizing: border-box;
+  }
+
+  .about-me a {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+    padding: 0 3px;
+    margin: 0 -2px;
+  }
+
+  .about-me a:hover {
+    color: #fff;
+  }
+
+
+/* # PROJECTS # */
+
+#projects {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+}
+
+#projects h1 {
+  margin: 20px 0;
+}
+
+#projects h3 {
+  font-family: 'Inconsolata';
+  text-transform: uppercase;
+}
+
+#projects h1,
+#projects h3,
+#projects p {
+  text-align: center;
+}
+
+#projects p {
+    max-width: 700px;
+    margin: 16px auto;
+}
+
+#projects .arrow {
+  position: absolute;
+  top: calc(107px + 25.6vw);
+  padding: 2px 6px 3px;
+  border-radius: 2px;
+  z-index: 10;
+  font-size: 30px;
+  color: #1db9d3;
+}
+
+#projects .arrow:hover {
+  color: #000;
+  background-color: #1db9d3;
+}
+
+.fa-angle-left {
+  left: 10px;
+}
+
+.fa-angle-right {
+  right: 10px;
+}
+
+.slide {
+  height: 0;
+  display: none;
+  transition: opacity 0.7s ease;
+}
+
+.slide:not(#handwriting){
+  margin-top: -18.7px;
+}
+
+.slide.active {
+  height: auto;
+  display: block;
+  margin-bottom: 40px;
+}
+
+
+#projects .frame {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  margin: auto;
+  display: block;
+}
+
+  #projects .frame.landscape {
+    background-position: 50% 50%;
+    height: 51.2vw;
+    width: 80vw;
+  }
+
+  .frame.handwriting {
+    background-image: url(https://static.tumblr.com/ru7wwz6/XBpp3bw6q/handwriting.png);
+  }
+
+  .frame.desktop {
+    background-image: url(https://static.tumblr.com/ru7wwz6/thXp3bw6p/desktop.png);
+  }
+
+  .frame.mobile {
+    background-image: url(https://static.tumblr.com/ru7wwz6/60np3bw6r/mobile.png);
+    height: 63.76vw;
+    width: 50vw;
+  }
+
+  #projects .frame.twitterbot {
+    background-image: url(https://static.tumblr.com/ru7wwz6/eUup3bw74/twitterbot.png);
+  }
+
+  .frame.graph {
+    background-image: url(https://static.tumblr.com/ru7wwz6/T72p3bw6q/graph.png);
+  }
+
+  .frame.tabber {
+    background-image: url(https://static.tumblr.com/ru7wwz6/IY4p3bw74/tabber.png);
+    height: 63.6vw;
+    width: 50vw;
+  }
+
+  .frame.ttt {
+    background-image: url(https://static.tumblr.com/ru7wwz6/gwHp3bw74/ttt.png);
+  }
+
+  .frame.voluntourist {
+    background-image: url(https://static.tumblr.com/ru7wwz6/JNzp3bw75/voluntourist.png);
+  }
+
+.links {
+  text-align: center;
+}
+
+.links a {
+  padding: 2px;
+}
+
+#projects ul {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  list-style: none;
+  padding: 0 20px;
+  text-align: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+#projects li {
+  padding: 7px;
+    font-size: 18px;
+}
+
+#projects li:before {
+  content: 'ϟ ';
+}
+
+/* # SKILLS # */
+
+#skills {
+  padding: 30px 15px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.info-icon {
+  display: inline-block;
+  width: 30%;
+}
+
+.info-icon i {
+  font-size: 25px;
+}
+
+.info-icon img {
+  height: 25px;
+}
+
+
+
+/* # CONTACT # */
+
+#contact {
+  color: #fff;
+  background-color: #000;
+  width: 100%;
+  background-color: #000;
+  padding: 11px 15px 10px;
+  box-sizing: border-box;
+}
+
+#contact h1 {
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 15px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.social div {
+  flex: 1;
+  text-align: center;
+}
+
+.social a {
+  display: block;
+}
+
+.contact-icon .fa-3x {
+  font-size: 2em;
+}
+
+
+
+/* # FOOTER # */
+
+footer {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  background-color: #000;
+  padding: 5px;
+  background-image: url(https://static.tumblr.com/ru7wwz6/r0xp3bw6p/cole.jpg);
+  background-size: auto 100%;
+  background-position: 50%;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer p {
+  margin: 5px 0;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 100;
+}
+
+footer a {
+  padding: 0 3px;
+  margin: 0 -2px;
+}
+
+footer a:hover {
+  text-shadow: none;
+}
+
+footer i {
+  color: #D76B8D;
+}
+
+/* # ERROR PAGES # */
+
+.error {
+  text-align: center;
+  color: #fff;
+  padding: 15px;
+}
+
+.error h1 {
+  font-size: 60px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.error h2 {
+  font-family: 'Inconsolata';
+}
+
+.error .frame {
+  background-size: 82%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 85vw;
+}
+
+.frame.notfound {
+  background-image: url(images/error/LC.gif);
+  height: 58vw;
+  max-width: 413px;
+  max-height: 282px;
+  margin-bottom: 25px;
+}
+
+.frame.jan {
+  background-image: url(images/error/jan.gif);
+  height: 43.18vw;
+  max-width: 500px;
+  max-height: 254px;
+  margin-bottom: 25px;
+}
+
+.frame.johnye {
+  background-image: url(images/error/johnye.gif);
+  height: 72.96vw;
+  max-width: 349.5px;
+  max-height: 300px;
+  margin-bottom: 25px;
+}
+
+.frame.denied {
+  background-image: url(images/error/denied.gif);
+  height: 50.45vw;
+  max-width: 421.25px;
+  max-height: 250px;
+  margin-bottom: 25px;
+}
+
+.error a {
+  display: block;
+  text-transform: uppercase;
+  font-size: 20px;
+    width: 200px;
+    margin: auto;
+}
+
+.hide-on-mobile {
+  display: none;
+}
+
+.show-on-mobile {
+  display: inline;
+}
+
+@media (min-width: 768px){
+
+  /* # GENERAL # */
+
+  .section {
+    padding: 11px 30px 10px;
+  }
+
+  /* # ABOUT # */
+
+  .about-me {
+    width: 355px;
+    padding: 10px;
+    float: right;
+  }
+
+  /* # PROJECTS # */
+  #projects .arrow {
+    top: calc(107px + 19.2vw);
+    font-size: 50px;
+  }
+
+  .two-images {
+    max-width: 869px;
+    margin: auto;
+  }
+
+  #projects .frame.desktop,
+  #projects .frame.mobile,
+  #projects .frame.graph,
+  #projects .frame.tabber {
+    display: inline-block;
+  }
+
+  #projects .frame.landscape {
+    height: 38.4vw;
+    width: 60vw;
+    max-width: 527px;
+    max-height: 338px;
+  }
+
+  #projects .frame.mobile,
+  #projects .frame.tabber {
+    height: 38.4vw;
+    width: 30.1vw;
+    max-width: 265px;
+    max-height: 338px;
+  }
+
+  /* # SKILLS # */
+
+  .info-icon i {
+    font-size: 40px;
+  }
+
+  .info-icon p {
+    font-size: 120%;
+  }
+
+  .info-icon img {
+    height: 40px;
+  }
+
+  /* # CONTACT # */
+
+  .halve {
+    width: 49%;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .halve:first-child {
+    margin-right: 1%;
+  }
+
+  .show-on-mobile {
+    display: none;
+  }
+
+  /* ## SOCIAL ICONS ## */
+
+  .social a {
+    font-size: 120%;
+  }
+
+  .contact-icon .fa-3x {
+    font-size: 3em;
+  }
+
+  .hide-on-mobile {
+    display: inline;
+  }
+
+  .show-on-mobile {
+    display: none;
+  }
+}
+
+
+@media (min-width: 860px){
+
+  /* # GENERAL # */
+
+  .section {
+    padding: 11px calc(50% - 400px) 10px;
+  }
+}
